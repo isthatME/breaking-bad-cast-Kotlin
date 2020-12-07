@@ -1,4 +1,4 @@
-package com.example.shakil.kotlinjsonexample.Retrofit
+package com.kotlinjsonexample.Retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package com.example.shakil.kotlinjsonexample.Adapter
+package com.kotlinjsonexample.Adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,15 +7,18 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.shakil.kotlinjsonexample.Model.Character
+import com.kotlinjsonexample.Model.Character
 import com.example.shakil.kotlinjsonexample.R
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.layout_movie_item.view.*
+import kotlinx.android.synthetic.main.activity_character_list.view.*
+import kotlinx.android.synthetic.main.layout_item.view.*
 
 class CharacterAdapter(private val context: Context, private val characterList: MutableList<Character>): RecyclerView.Adapter<CharacterAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        var itemView = LayoutInflater.from(context).inflate(R.layout.layout_movie_item, parent, false)
-        return MyViewHolder(itemView)
+        var itemView = LayoutInflater.from(context).inflate(R.layout.layout_item, parent, false)
+        return MyViewHolder(
+            itemView
+        )
     }
 
     override fun getItemCount(): Int {

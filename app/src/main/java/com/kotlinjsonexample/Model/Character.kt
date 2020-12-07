@@ -1,4 +1,4 @@
-package com.example.shakil.kotlinjsonexample.Model
+package com.kotlinjsonexample.Model
 
 class Character {
     var name: String? = null

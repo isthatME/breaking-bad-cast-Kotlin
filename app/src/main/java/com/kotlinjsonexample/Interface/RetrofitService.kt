@@ -1,6 +1,6 @@
-package com.example.shakil.kotlinjsonexample.Interface
+package com.kotlinjsonexample.Interface
 
-import com.example.shakil.kotlinjsonexample.Model.Character
+import com.kotlinjsonexample.Model.Character
 import retrofit2.Call
 import retrofit2.http.GET
 
