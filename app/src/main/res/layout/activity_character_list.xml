@@ -8,17 +8,28 @@
         android:orientation="vertical"
         tools:context="com.kotlinjsonexample.MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Personagens"
+            app:titleMarginStart="90dp"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="?attr/actionModeCloseDrawable"
+            ></androidx.appcompat.widget.Toolbar>
+
+
     <TextView
             android:id="@+id/nicknameWelcome"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textStyle="bold"
-            android:textSize="20sp"
             android:layout_marginBottom="30dp"
             android:text="teste"
+            android:textAlignment="center"
+            android:textSize="20sp"
 
-            android:textAlignment="center" />
+            android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerMovieList"

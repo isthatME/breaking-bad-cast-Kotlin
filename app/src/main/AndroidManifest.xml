@@ -12,7 +12,6 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name="com.kotlinjsonexample.CharacterList"></activity>
-        <activity android:name="com.kotlinjsonexample.LoginActivity" />
         <activity android:name="com.kotlinjsonexample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

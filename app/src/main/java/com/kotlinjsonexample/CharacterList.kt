@@ -30,12 +30,21 @@ class CharacterList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_character_list)
+        setSupportActionBar(toolbar);
+
+        toolbar.setNavigationOnClickListener {
+            val intent = Intent(this@CharacterList, MainActivity::class.java);
+            startActivity(intent);
+        }
 
         val intent = getIntent();
         val nicknameWelcome: TextView = findViewById(R.id.nicknameWelcome);
         val nickname: String = intent.getStringExtra("nickname");
 
         nicknameWelcome.text = "Bem vindo " + nickname;
+
+
+
 
         mService = Common.retrofitService
         recyclerMovieList.setHasFixedSize(true)
